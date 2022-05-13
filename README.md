@@ -5,7 +5,9 @@ Manage a Bitcoin wallet.
 ## Description
 
 User: Log in to access the wallet.
+<br>
 Contacts: Handle a contact list - Add or remove a contact, transfer coins to a specific contact, review the latest transfers you made.
+<br>
 Statistics: Review the latest movements in the market.
 
 ## Software and Languages used
