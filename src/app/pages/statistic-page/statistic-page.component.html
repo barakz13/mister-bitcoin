@@ -1,0 +1,37 @@
+<section
+  *ngIf="marketPriceChart && confirmedTransactionsChart"
+  class="statistics-page-section"
+>
+  <section class="statistics flex column space-around">
+    <div class="statistics-market-price flex column space-evenly full-grow">
+      <div class="statistics-market-price-txt-div flex column space-evenly">
+        <h3 class="statistics-market-price-txt">Market Price (USD)</h3>
+        <google-chart
+          [title]="marketPriceChart.title"
+          [type]="marketPriceChart.type"
+          [data]="marketPriceChart.data"
+          [options]="marketPriceChart.options"
+          [dynamicResize]="marketPriceChart.dynamicResize"
+          style="width: 100%"
+        ></google-chart>
+      </div>
+      <div class="statistics-market-price-graph"></div>
+    </div>
+    <div class="statistics-transactions flex column space-evenly full-grow">
+      <div class="statistics-transactions-txt-div flex column space-evenly">
+        <h3 class="statistics-transactions-txt">
+          Confirmed Transactions Per Day
+        </h3>
+        <google-chart
+          [title]="confirmedTransactionsChart.title"
+          [options]="confirmedTransactionsChart.options"
+          [type]="confirmedTransactionsChart.type"
+          [data]="confirmedTransactionsChart.data"
+          [dynamicResize]="confirmedTransactionsChart.dynamicResize"
+          style="width: 100%"
+        ></google-chart>
+      </div>
+      <div class="statistics-transactions-graph"></div>
+    </div>
+  </section>
+</section>

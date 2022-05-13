@@ -1,0 +1,19 @@
+<div class="move-list-title-div">
+  <h3 class="move-list-title">{{ title }}:</h3>
+</div>
+<div
+  [ngClass]="{ 'move-list-scroll': title === 'Your Moves' }"
+  class="move-list-moves flex column space-evenly"
+>
+  <section class="move-list" *ngFor="let move of movesForDisplay">
+    <div *ngIf="title === 'Your last 3 Moves'" class="move-list-to">
+      To: {{ move.to }}
+    </div>
+    <div class="move-list-date-div">
+      <h4 class="move-list-date">At:{{ move.at | date: "M/d/yy, hh:mm a" }}</h4>
+    </div>
+    <div class="move-list-amount-div">
+      <h4 class="move-list-amount">Amount: {{ move.amount }} coins</h4>
+    </div>
+  </section>
+</div>

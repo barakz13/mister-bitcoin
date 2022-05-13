@@ -1,0 +1,28 @@
+.move-list-title {
+  font-size: 25px;
+  font-weight: 600;
+
+  @media (max-width: 700px) {
+    font-size: 22px;
+  }
+}
+
+.move-list-moves {
+  flex: 0.7;
+  height: 100%;
+  padding-top: 20px;
+  margin-top: 10px;
+
+  .move-list {
+    padding-top: 10px;
+
+    .move-list-to {
+        font-weight: 600;
+    }
+  }
+}
+
+.move-list-scroll {
+  overflow-y: auto;
+}
+

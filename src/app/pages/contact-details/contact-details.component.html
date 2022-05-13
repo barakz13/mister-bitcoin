@@ -1,0 +1,38 @@
+<section class="contact-details-section flex justify-center align-center">
+  <div class="contact-details flex column space-between">
+    <div class="contact-details-content flex column space-evenly">
+      <img
+        src="https://robohash.org/set_set5/{{ contact._id }}"
+        alt="contact-details-img"
+        class="contact-details-img"
+      />
+      <h4 class="contact-details-name">{{ contact.name }}</h4>
+      <h4 class="contact-details-email">{{ contact.email }}</h4>
+      <h4 class="contact-details-phone">{{ contact.phone }}</h4>
+    </div>
+    <transfer-fund
+      (submittedAmount)="onTransferCoins($event)"
+      [contact]="contact"
+      [maxCoins]="user.coins"
+    ></transfer-fund>
+    <section class="move-list-section">
+      <moves-list
+        [movesList]="this.user.moves"
+        [title]="'Your Moves'"
+        [contactId]="contact._id"
+      ></moves-list>
+    </section>
+    <div class="contact-details-actions flex space-evenly align-center">
+      <img
+        src="./assets/img/back.png"
+        (click)="this.onBack()"
+        class="contact-details-img-back"
+      />
+      <img
+        src="./assets/img/edit.png"
+        routerLink="/contact/edit/{{ contact._id }}"
+        class="contact-details-img-edit"
+      />
+    </div>
+  </div>
+</section>

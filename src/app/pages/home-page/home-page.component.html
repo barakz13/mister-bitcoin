@@ -1,0 +1,37 @@
+<section class="home-page-section flex justify-center align-center">
+  <div class="user-welcome-section flex column">
+    <div class="user-welcome flex column space-evenly">
+      <div class="user-welcome-greet">
+        <span class="user-welcome-greet-hello">Hello</span>&nbsp;
+        <span class="user-welcome-greet-name">{{ user.name }}!</span>
+      </div>
+      <div class="user-welcome-wallet flex column space-evenly">
+        <div class="user-welcome-coins flex align-center">
+          <img
+            src="./assets/img/coins.png"
+            alt="user-welcome-coins-img"
+            class="user-welcome-coins-img"
+          />
+          <span class="user-welcome-coins-txt">Coins:</span>
+          <span class="user-welcome-coins-amount">{{ user.coins }}</span>
+        </div>
+        <div class="user-welcome-btc flex align-center">
+          <img
+            src="./assets/img/bitcoin.png"
+            alt="user-welcome-btc-img"
+            class="user-welcome-btc-img"
+          />
+          <span class="user-welcome-btc-txt">BTC:</span>
+          <span class="user-welcome-btc-amount">{{ rate }}</span>
+        </div>
+      </div>
+    </div>
+    <section class="move-list-section flex column full-grow">
+      <moves-list
+        class="moves-list flex column"
+        [title]="'Your last 3 Moves'"
+        [movesList]="user.moves"
+      ></moves-list>
+    </section>
+  </div>
+</section>

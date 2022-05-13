@@ -1,0 +1,43 @@
+.statistics-page-section {
+  height: 100%;
+
+  .statistics {
+    height: 80%;
+    position: relative;
+    top: 70px;
+    width: 80%;
+    margin-left: 10%;
+
+    @media (max-width: 700px) {
+      height: 90%;
+      top: 21px;
+    }
+
+    .statistics-market-price-txt-div {
+      height: 100%;
+
+      .statistics-market-price-txt {
+        padding-left: 10px;
+        font-size: 30px;
+        font-weight: 600;
+
+        @media (max-width: 700px) {
+          font-size: 22px;
+        }
+      }
+    }
+    .statistics-transactions-txt-div {
+      height: 100%;
+
+      .statistics-transactions-txt {
+        padding-left: 10px;
+        font-size: 30px;
+        font-weight: 600;
+
+        @media (max-width: 700px) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

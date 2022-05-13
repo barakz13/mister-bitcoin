@@ -1,0 +1,42 @@
+<header class="app-header flex space-between align-center">
+  <div class="app-header-logo-con">
+    <h2 class="app-header-logo">Mister-BITCoin</h2>
+  </div>
+  <nav class="app-header-main-nav flex space-evenly">
+    <div
+      [ngClass]="{ hamburger: isMenuOn }"
+      class="app-header-nav-regular flex space-evenly"
+      *ngIf="menuStatus === 'regular'; else hamburgerBtn"
+      [@inOutAnimation]
+    >
+      <a
+        (click)="toggleMenu()"
+        class="link-home"
+        routerLink=""
+        routerLinkActive="link-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+      <a
+        (click)="toggleMenu()"
+        class="link-contacts"
+        routerLink="contact"
+        routerLinkActive="link-active"
+      >
+        Contacts
+      </a>
+      <a
+        (click)="toggleMenu()"
+        class="link-statistics"
+        routerLink="statistics"
+        routerLinkActive="link-active"
+      >
+        Statistics
+      </a>
+    </div>
+    <ng-template #hamburgerBtn>
+      <button class="menu-btn" (click)="toggleMenu()">☰</button>
+    </ng-template>
+  </nav>
+</header>

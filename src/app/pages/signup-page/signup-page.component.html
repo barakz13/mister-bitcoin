@@ -1,0 +1,24 @@
+<section class="signup-section flex justify-center align-center">
+  <div class="signup flex column space-evenly align-center">
+    <div class="signup-img-div">
+      <img src="./assets/img/bitcoin.png" alt="signup-img" class="signup-img" />
+    </div>
+    <div class="signup-content flex column space-evenly align-center">
+      <div class="signup-content-input-div flex column space-between">
+        <label for="name" class="signup-content-input-label">
+          Please enter your name:
+        </label>
+        <input
+          [(ngModel)]="name"
+          type="text"
+          name="name"
+          id="name"
+          class="signup-content-input"
+        />
+      </div>
+      <div class="signup-content-btn-div">
+        <button class="signup-content-btn" (click)="onSignUp()">Sign up</button>
+      </div>
+    </div>
+  </div>
+</section>

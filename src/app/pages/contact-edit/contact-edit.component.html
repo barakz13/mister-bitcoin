@@ -1,0 +1,59 @@
+<section class="contact-edit-section flex justify-center align-center">
+  <div class="contact-edit flex column space-evenly">
+    <h2 class="contact-edit-title">
+      {{ contact._id ? "Edit" : "Add" }} Contact
+    </h2>
+    <form
+      #form="ngForm"
+      (ngSubmit)="onSaveContact()"
+      class="contact-edit-form flex column space-between"
+    >
+      <div class="contact-edit-fields flex column space-evenly">
+        <label for="name">Name</label>
+        <input
+          [(ngModel)]="contact.name"
+          type="text"
+          name="name"
+          id="name"
+          required
+          minlength="2"
+        />
+        <label for="phone">Phone</label>
+        <input
+          [(ngModel)]="contact.phone"
+          type="text"
+          name="phone"
+          id="phone"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          [(ngModel)]="contact.email"
+          type="text"
+          name="email"
+          id="email"
+          required
+          email
+        />
+      </div>
+      <button
+        [disabled]="form.invalid && form.touched"
+        class="contact-edit-actions-btn-save"
+      >
+        <img src="./assets/img/save.png" alt="" />
+      </button>
+    </form>
+    <div class="contact-edit-actions flex space-evenly align-center">
+      <img
+        src="./assets/img/back.png"
+        (click)="onBack()"
+        class="contact-edit-actions-back"
+      />
+      <img
+        src="./assets/img/delete.png"
+        (click)="onRemoveContact(contact._id, contact.name)"
+        class="contact-edit-actions-delete"
+      />
+    </div>
+  </div>
+</section>

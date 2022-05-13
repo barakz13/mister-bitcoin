@@ -1,0 +1,12 @@
+<section *ngIf="msg" [@inOutAnimation] class="user-msg-section">
+  <div class="user-msg">
+    <div class="user-msg-img">
+      <img src="./assets/img/bitcoin.png" alt="" class="user-msg-img" />
+    </div>
+    <div class="user-msg-txt">
+      <h3 class="user-msg-txt">
+        {{ msg }}
+      </h3>
+    </div>
+  </div>
+</section>

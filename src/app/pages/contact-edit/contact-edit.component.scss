@@ -1,0 +1,40 @@
+.contact-edit-section {
+  height: 100%;
+
+  .contact-edit {
+    height: 90%;
+    width: 350px;
+
+    .contact-edit-title {
+      font-weight: 600;
+    }
+
+    .contact-edit-form {
+      height: 300px;
+
+      label {
+        font-weight: 600;
+      }
+
+      .contact-edit-fields {
+        height: 70%;
+      }
+
+      .contact-edit-actions-btn-save {
+        align-self: center;
+        width: 45px;
+        border: none;
+        background: none;
+      }
+    }
+
+    .contact-edit-actions-back {
+      cursor: pointer;
+    }
+
+    .contact-edit-actions-delete {
+      width: 43px;
+      cursor: pointer;
+    }
+  }
+}

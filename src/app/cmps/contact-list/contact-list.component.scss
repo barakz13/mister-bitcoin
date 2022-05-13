@@ -1,0 +1,10 @@
+.contact-list-section {
+  height: 100%;
+
+  .contact-list {
+    height: 100%;
+    column-gap: 36px;
+    row-gap: 25px;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,24 @@
+<section class="contact-filter-section flex space-evenly align-center">
+  <div class="contact-filter-div flex space-evenly">
+    <label for="name">Name</label>
+    <input
+      [(ngModel)]="filterBy.name"
+      (ngModelChange)="onChangeFilter()"
+      type="text"
+      class="contact-filter-input"
+      name="name"
+      id="name"
+    />
+  </div>
+  <div class="contact-filter-div flex space-evenly">
+    <label for="phone">Phone</label>
+    <input
+      [(ngModel)]="filterBy.phone"
+      (ngModelChange)="onChangeFilter()"
+      type="text"
+      class="contact-filter-input"
+      name="phone"
+      id="phone"
+    />
+  </div>
+</section>

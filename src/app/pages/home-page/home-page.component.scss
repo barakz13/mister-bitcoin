@@ -1,0 +1,62 @@
+.home-page-section {
+  height: 100%;
+
+  .user-welcome-section {
+    width: 350px;
+    height: 100%;
+
+    .user-welcome {
+      height: 50%;
+      .user-welcome-greet {
+        font-size: 65px;
+        font-weight: 600;
+        text-align: center;
+
+        @media (max-width: 700px) {
+          font-size: 45px;
+        }
+      }
+
+      .user-welcome-wallet {
+        font-size: 23px;
+        height: 30%;
+
+        @media (max-width: 700px) {
+          font-size: 18px;
+        }
+        .user-welcome-coins {
+          .user-welcome-coins-txt {
+            text-align: center;
+            width: 30%;
+            padding-right: 12px;
+          }
+          .user-welcome-coins-img {
+            width: 28px;
+            height: 32px;
+            margin-left: 5px;
+          }
+        }
+
+        .user-welcome-btc {
+          .user-welcome-btc-img {
+            width: 35px;
+            height: 32px;
+          }
+
+          .user-welcome-btc-txt {
+            margin-left: 19px;
+          }
+
+          .user-welcome-btc-amount {
+            margin-left: 45px;
+          }
+        }
+      }
+    }
+    .move-list-section {
+      .moves-list {
+        height: 100%;
+      }
+    }
+  }
+}

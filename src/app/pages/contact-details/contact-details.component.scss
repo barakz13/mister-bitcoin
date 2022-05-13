@@ -1,0 +1,37 @@
+.contact-details-section {
+  margin: 0 auto;
+  height: 100%;
+
+  .contact-details {
+    height: 700px;
+    padding: 20px;
+    border-radius: 13px;
+    width: 400px;
+
+    @media (max-width: 700px) {
+      height: 79.6vh;
+    }
+
+    .contact-details-name {
+      font-weight: 600;
+    }
+
+    .contact-details-content {
+      height: 250px;
+      .contact-details-img {
+        width: 150px;
+      }
+    }
+    .contact-details-actions {
+      cursor: pointer;
+
+      .contact-details-img-edit {
+        width: 37px;
+      }
+    }
+  }
+
+  .move-list-section {
+    max-height: 108px;
+  }
+}

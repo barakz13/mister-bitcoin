@@ -1,0 +1,13 @@
+<section class="contact-page-section flex column align-center space-evenly">
+  <img
+    src="./assets/img/add.png"
+    routerLink="/contact/edit"
+    routerLinkActive="router-link"
+    class="contact-page-img-add"
+  />
+  <contact-filter class="contact-filter-view"></contact-filter>
+  <contact-list
+    class="contact-list-view"
+    [contacts]="contacts$ | async"
+  ></contact-list>
+</section>

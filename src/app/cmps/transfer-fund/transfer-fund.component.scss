@@ -1,0 +1,23 @@
+.transfer-fund {
+  height: 50px;
+
+  .transfer-fund-title{
+    font-weight: 600;
+  }
+
+  .transfer-fund-form {
+    .transfer-fund-input {
+      margin-left: 10px;
+      width: 30%;
+    }
+    .transfer-fund-btn {
+      border: none;
+      background: none;
+      .transfer-fund-img {
+        width: 45px;
+        border: none;
+        background: none;
+      }
+    }
+  }
+}

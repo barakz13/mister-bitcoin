@@ -1,0 +1,33 @@
+.signup-section {
+  height: 100%;
+  .signup {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    .signup-img {
+      width: 100px;
+    }
+
+    .signup-content {
+      height: 168px;
+
+      .signup-content-input-div {
+        height: 60px;
+
+        .signup-content-input-label {
+          text-align: center;
+        }
+      }
+
+      .signup-content-btn {
+        border-radius: 13px;
+        height: 28px;
+        width: 65px;
+        border: 1px solid black;
+        font-weight: 600;
+      }
+    }
+  }
+}

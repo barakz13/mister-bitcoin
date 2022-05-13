@@ -1,0 +1,35 @@
+<section class="transfer-fund flex column space-between">
+  <div class="transfer-fund-title-div">
+    <h3 class="transfer-fund-title">Transfer coins to {{ contact.name }}:</h3>
+  </div>
+  <div class="transfer-fund-form-div">
+    <form
+      #form="ngForm"
+      (ngSubmit)="onSubmitAmount(form)"
+      class="transfer-fund-form flex space-between align-center"
+    >
+      <div class="transfer-fund-label-input-div full-grow">
+        <label for="amount" class="transfer-fund-label"> Amount: </label>
+        <input
+          [(ngModel)]="amount"
+          name="amount"
+          type="number"
+          id="amount"
+          class="transfer-fund-input"
+          minlength="2"
+          max="{{ maxCoins }}"
+          required
+        />
+      </div>
+      <div class="transfer-fund-btn-div">
+        <button [disabled]="form.pristine" class="transfer-fund-btn">
+          <img
+            src="./assets/img/transfer.png"
+            alt=""
+            class="transfer-fund-img"
+          />
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
